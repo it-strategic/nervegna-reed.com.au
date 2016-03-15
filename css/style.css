@@ -5,7 +5,7 @@ body {
 }
 
 #content {
-  
+
 }
 a {text-decoration:none;}
 a:hover {text-decoration:underline;}
@@ -32,12 +32,12 @@ img {border:0;}
 
 #lefthead, #righthead, #leftfoot, #rightfoot {
   width:40px;
-  height:40px; 
+  height:40px;
 }
 #lefthead {
   float:left;
   border-bottom:1px solid #000;
-  border-right:1px solid #000; 
+  border-right:1px solid #000;
   margin:8px 0 0 4%;
 }
 
@@ -149,7 +149,7 @@ img {border:0;}
 }
 
 #nrintro p {
-  margin-top:0; 
+  margin-top:0;
   margin-bottom:1em;
 }
 
@@ -307,7 +307,7 @@ img {border:0;}
   margin-left:2px;
   margin-right:2px;
   float:left;
-  border:1px dashed #ff0000; 
+  border:1px dashed #ff0000;
 }
 
 #name {
@@ -357,7 +357,7 @@ img {border:0;}
 
 #contact {
   background:url(../img/nth.gif) right no-repeat;
-  font-size:.7em;
+  font-size:.65em;
   line-height:1em;
   float:left;
   border:1px dashed #ff0000;
@@ -393,4 +393,3 @@ img {border:0;}
   padding-right:10px;
 
 }
-
