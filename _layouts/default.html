@@ -32,12 +32,9 @@
 		<script type="text/javascript" src="/html5lightbox/html5lightbox.js"></script>
 	</head>
 
-	<body>
+	<body {{ page.body }}>
 		<div id="content">
-		  <div id="head">
-		    <div id="lefthead">&nbsp;</div>
-		    <div id="righthead">&nbsp;</div>
-		  </div>
+			{% include header.html %}
   		<div id="viewport">
     		{{ content }}
   		</div>

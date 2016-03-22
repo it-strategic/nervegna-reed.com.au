@@ -198,6 +198,30 @@ img {
   padding-right:10px;
 }
 
+#home_plus {
+  margin: auto 0;
+  width: 82%;
+  height:50px;
+  text-align:center;
+  display: inline-block;
+}
+
+#home_plus img {
+  margin:5px auto;
+  opacity: 0;
+  height: 50px;
+}
+
+#home_plus a {
+  text-decoration:none;
+}
+
+#home_plus a:hover img,
+#home_plus a:focus img {
+  transition: .3s;
+  opacity: 1;
+}
+
 /* Layout options for all pages */
 #maincol {
   float:left;
@@ -267,6 +291,10 @@ img {
   letter-spacing:.05em;
   font-size:1.1em;
   padding-top:20px;
+}
+
+.splash #home_plus {
+  display: none;
 }
 
 /* Profile page */
