@@ -297,14 +297,18 @@ img {border:0;}
   text-align:left;
 }
 
+.publications #leftgallery {
+  width: 410px;
+}
+
 .publications ul li {
   padding-bottom: .5em;
 }
 
-.publications #fullsize,
 .publications #fullsize img {
-  width:330px;
-  height: 500px;
+  width:200px;
+  height: 286px;
+  margin-right: 75px;
 }
 
 .publications #fullsize,
