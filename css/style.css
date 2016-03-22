@@ -214,6 +214,10 @@ img {border:0;}
   width:380px;
 }
 
+#gallery a {
+  text-decoration: none;
+}
+
 #fullsize {
   float:right;
   margin-right:4px;
@@ -293,6 +297,29 @@ img {border:0;}
   text-align:left;
 }
 
+.publications ul li {
+  padding-bottom: .5em;
+}
+
+.publications #fullsize,
+.publications #fullsize img {
+  width:330px;
+  height: 500px;
+}
+
+.publications #fullsize,
+.publications #gallery {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+
+.publications #gallery a:first-child {
+  margin-left: 3em;
+}
+
+.publications_media {
+  clear: both;
+}
 
 /* Title strip */
 
