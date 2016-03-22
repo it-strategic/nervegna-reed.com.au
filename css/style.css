@@ -216,7 +216,7 @@ img {
   text-decoration:none;
 }
 
-#home_plus a:hover img,
+#home_plus:hover img,
 #home_plus a:focus img {
   transition: .3s;
   opacity: 1;
