@@ -338,23 +338,36 @@ img {
 .projects a img {
   border:2px solid #fff;
 }
-.projects a:hover img {
+.projects a:hover img,
+.projects a:focus img  {
   border:2px solid #000;
 }
 
-.projects .galleryitem  {
-  padding-bottom:20px;
-  display:block;
-  text-align:center;
-  float:left;
-  padding-right:15px;
-  vertical-align:middle;
+.projects-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.projects .galleryitem,
-.projects .galleryitem img {
-  width: 190px;
-  height: 170px;
+.galleryitem {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.galleryitem,
+.galleryitem img {
+  max-height: 250px;
+  max-width: 250px;
 }
 
 /* individual project pages */
