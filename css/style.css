@@ -501,6 +501,11 @@ a.social_icon:focus img {
   order: 4;
 }
 
+.art_page .artgallery_thumb {
+  padding-right: 50px;
+}
+
+
 @media all and (max-width: 500px) {
   .artgallery,
   .projects-list  {
