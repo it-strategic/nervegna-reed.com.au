@@ -373,77 +373,109 @@ img {
 .galleryitem,
 .galleryitem img {
   max-height: 250px;
-  max-width: 250px;
+  max-width: 200px;
 }
 
 /* individual project pages */
-#leftgallery {
+.leftcolumn {
   width:380px;
-  float:left;
+  display: inline-block;
 }
 
-#gallery {
-  clear:both;
-  margin-top:1em;
-  text-align:justify;
-  width:380px;
-}
-
-#gallery a {
-  text-decoration: none;
-}
-
-#gallery img {
-  margin-bottom:12px;
-}
-
-#gallery img {
-  border:2px solid #fff;
-}
-
-#gallery a:hover img {
-  border:2px solid #000;
-}
-
-#fullsize {
+.rightcolumn {
   float:right;
   margin-right:4px;
   padding-bottom:20px;
   text-align:right;
 }
 
-#fullsize,
-#fullsize img {
+.rightcolumn,
+.rightcolumn img {
   width:400px;
 }
 
-#textcontent {
-  float:left;
+.gallery {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;;
+  align-items: center;
+}
+.gallery_thumb {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-/* Art and Unbuilt pages */
-.gallerycol01,
-.gallerycol02,
-.gallerycol03 {
-  float:left;
-  width:33%;
-  text-align:center;
+.gallery_thumb a {
+  text-decoration: none;
 }
 
-.art {
-  text-align:justify;
-}
-
-.art img {
-  margin-bottom:12px;
-}
-
-.art a img {
+.gallery_thumb img {
   border:2px solid #fff;
 }
 
-.art a:hover img  {
+.gallery_thumb a:hover img {
   border:2px solid #000;
+}
+
+/* Art and Unbuilt pages */
+
+.artgallery {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.artgallery_thumb {
+  display: inline-block;
+  text-align:justify;
+  margin-bottom:12px;
+}
+
+.artgallery_thumb  a img {
+  border:2px solid #fff;
+}
+
+.artgallery_thumb  a:hover img,
+.artgallery_thumb  a:focus img   {
+  border:2px solid #000;
+}
+
+.row1 {
+  order: 1;
+}
+.row2 {
+  order: 2;
+}
+.row3 {
+  order: 3;
+}
+.row4 {
+  order: 4;
+}
+
+@media all and (max-width: 500px) {
+  .artgallery,
+  .projects-list  {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
 
 /* Video pages */
