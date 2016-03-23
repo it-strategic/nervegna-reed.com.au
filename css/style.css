@@ -222,6 +222,28 @@ img {
   opacity: 1;
 }
 
+.socialfoot {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.socialfoot a {
+  text-decoration: none;
+}
+
+.socialfoot a img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  border:1px dashed #ff0000;
+}
+
+.socialfoot a:hover img,
+.socialfoot a:focus img {
+  opacity: 1;
+}
+
 /* Layout options for all pages */
 #maincol {
   float:left;
