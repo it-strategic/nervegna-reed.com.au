@@ -228,19 +228,19 @@ img {
   margin-bottom: 40px;
 }
 
-.socialfoot a {
+.social_icon {
   text-decoration: none;
 }
 
-.socialfoot a img {
+.social_icon img {
   width: 30px;
   height: 30px;
   opacity: 0.7;
   border:1px dashed #ff0000;
 }
 
-.socialfoot a:hover img,
-.socialfoot a:focus img {
+a.social_icon:hover img,
+a.social_icon:focus img {
   opacity: 1;
 }
 
@@ -364,6 +364,11 @@ img {
 #anna {
   padding-top:1em;
   text-align:left;
+}
+
+#toby .social_icon,
+#anna .social_icon {
+  margin-left: 1em;
 }
 
 /* Projects main page */
