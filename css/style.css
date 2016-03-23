@@ -244,10 +244,16 @@ img {
   text-align:justify;
 }
 
-#centerthis {
+#centerthis,
+.centerthis {
   width:820px;
   margin-left:auto;
   margin-right:auto;
+}
+
+.centerthis {
+  display: table;
+  margin-bottom: 20px;
 }
 
 #leftcol,
