@@ -36,7 +36,19 @@
 		<div id="content">
 			{% include header.html %}
   		<div id="viewport">
-    		{{ content }}
+				<div class="navigation_arrow">
+				  <a href="/{{ page.back }}.html">
+				    <img src="/img/back.gif" alt="back" title="back">
+				  </a>
+				</div>
+				<div id="maincol">
+    			{{ content }}
+				</div>
+				<div class="navigation_arrow">
+					<a href="/{{ page.next }}.html">
+						<img src="/img/fwd.gif" alt="next" title="next">
+					</a>
+				</div>
   		</div>
 			{% include footer.html %}
 		</div>

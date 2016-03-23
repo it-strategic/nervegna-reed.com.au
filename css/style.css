@@ -256,8 +256,7 @@ img {
   margin-bottom: 20px;
 }
 
-#leftcol,
-#rightcol {
+.navigation_arrow {
   float:left;
   width:8%;
   text-align:left;
@@ -301,6 +300,11 @@ img {
 
 .splash #home_plus {
   display: none;
+}
+
+.splash .navigation_arrow {
+  opacity: 0;
+  cursor: default;
 }
 
 /* Profile page */
@@ -487,46 +491,19 @@ img {
 .video a img {
   border:2px solid #fff;
 }
-.video a:hover img {
+.video a:hover img,
+.video a:focus img {
   border:2px solid #000;
 }
 
-.video #gallery {
-  text-align:left;
-}
-
 /* Awards amd Publications page */
-
-.publications #leftgallery p,
-.publications #fullsize p,
-.publications h3 {
-  text-align:left;
-}
-
-.publications #leftgallery {
-  width: 410px;
-}
 
 .publications ul li {
   padding-bottom: .5em;
 }
 
-.publications #fullsize img {
+.publications .rightcolumn img {
   width:200px;
   height: 286px;
   margin-right: 75px;
-}
-
-.publications #fullsize,
-.publications #gallery {
-  margin-bottom: 25px;
-  padding-bottom: 20px;
-}
-
-.publications #gallery a:first-child {
-  margin-left: 3em;
-}
-
-.publications_media {
-  clear: both;
 }
