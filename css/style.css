@@ -476,6 +476,10 @@ img {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
   }
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+  }
 }
 
 /* Video pages */
