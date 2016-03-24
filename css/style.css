@@ -274,6 +274,15 @@ a.social_icon:focus img {
   right: 2%;
 }
 
+.navigation_arrow img {
+  opacity: .5;
+}
+
+.navigation_arrow:hover img,
+.navigation_arrow a:focus img {
+  opacity: 1;
+}
+
 /* Splash page */
 #plus {
   margin:auto;
@@ -514,12 +523,16 @@ a.social_icon:focus img {
   .row  {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
+    width: 100%;
+  }
+  .gallery {
+    justify-content: space-around;
   }
   #footer_info {
     margin-top: 10px;
   }
   .leftcolumn,
-  .rightcolumn {
+  .rightcolumn{
     width: 100%;
   }
   .footer_item {
@@ -531,6 +544,9 @@ a.social_icon:focus img {
   }
   #home_plus img {
     opacity: 1;
+  }
+  .profileimg {
+    float: none;
   }
 
 }
