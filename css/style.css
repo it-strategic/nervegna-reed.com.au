@@ -516,6 +516,13 @@ a.social_icon:focus img {
 }
 
 /* Responsive styling for mobile devices */
+
+@media only screen and (max-width: 768px), (min-device-width: 500px) and (max-device-width: 768px)  {
+  img {
+    max-width: 350px;
+  }
+}
+
 @media all and (max-width: 500px) {
   .artgallery,
   .projects-list,
@@ -525,8 +532,12 @@ a.social_icon:focus img {
     flex-direction: column;
     width: 100%;
   }
+  .artgallery,
   .gallery {
     justify-content: space-around;
+  }
+  .art_page .artgallery_thumb {
+    padding-right: 0;
   }
   #footer_info {
     margin-top: 10px;
