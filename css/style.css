@@ -238,6 +238,14 @@ a.social_icon:focus img {
   text-align:left;
 }
 
+#maincol h2 {
+  font-size:1.25em;
+  width: 100%;
+  margin: 0 auto 1em;
+  font-weight:normal;
+  text-align:left;
+}
+
 #maincol p {
   text-align:justify;
   width: 100%;
