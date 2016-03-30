@@ -4,14 +4,29 @@ body {
   font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;
   margin:0;
   padding:0;
+  color:#1a1a1a;
+  background-color: #FFF;
+  line-height:1.2em;
 }
 
 a {
-  text-decoration:none;
+  text-decoration:underline;
 }
 
-a:hover {
-  text-decoration:underline;
+a:hover,
+a:focus {
+  text-decoration:none;
+  color: #d83627;
+}
+/*
+h1 {
+  color: #d83627;
+}*/
+
+h2,
+a,
+strong {
+  color: #222;
 }
 
 img {
@@ -28,7 +43,7 @@ img {
 #head {
   width:100%;
   height: 65px;
-  border-bottom:1px solid #000;
+  border-bottom:1px solid #1A1A1A;
 }
 
 #foot {
@@ -88,23 +103,23 @@ img {
 }
 
 #lefthead {
-  border-bottom:1px solid #000;
-  border-right:1px solid #000;
+  border-bottom:1px solid #1A1A1A;
+  border-right:1px solid #1A1A1A;
 }
 
 #righthead {
-  border-bottom:1px solid #000;
-  border-left:1px solid #000;
+  border-bottom:1px solid #1A1A1A;
+  border-left:1px solid #1A1A1A;
 }
 
 #leftfoot {
-  border-top:1px solid #000;
-  border-right:1px solid #000;
+  border-top:1px solid #1A1A1A;
+  border-right:1px solid #1A1A1A;
 }
 
 #rightfoot {
-  border-top:1px solid #000;
-  border-left:1px solid #000;
+  border-top:1px solid #1A1A1A;
+  border-left:1px solid #1A1A1A;
 }
 
 #footer {
@@ -113,8 +128,8 @@ img {
 }
 
 #footer_borders {
-  border-top:1px solid #000;
-  border-bottom:1px solid #000;
+  border-top:1px solid #1A1A1A;
+  border-bottom:1px solid #1A1A1A;
   width: 100%;
 }
 
@@ -139,7 +154,7 @@ img {
 
 .footer_item a {
   text-decoration:none;
-  color:#000;
+  color:#1A1A1A;
   font-size:.8em;
   letter-spacing:.1em;
   text-align:center;
@@ -155,7 +170,7 @@ a.projectslink,
 a.relatedlink,
 li#contact,
 img#deco {
-  border:1px dashed #ff0000;
+  border:1px dashed #F00;
 }
 
 a#name {
@@ -213,7 +228,7 @@ a.social_icon {
   width: 30px;
   height: 30px;
   opacity: 0.7;
-  border:1px dashed #ff0000;
+  border:1px dashed #F00;
 }
 
 a.social_icon:hover img,
@@ -309,7 +324,7 @@ a.social_icon:focus img {
 }
 
 .enter {
-  color:#000;
+  color:#1A1A1A;
   font-weight:normal;
   text-transform:uppercase;
   letter-spacing:.05em;
@@ -337,7 +352,7 @@ a.social_icon:focus img {
 .profileimg {
   float:right;
   margin:20px 0 0 16px;
-  border:0px solid #000;
+  border:0px solid #1A1A1A;
 }
 
 #nrintro {
@@ -381,7 +396,7 @@ a.social_icon:focus img {
 }
 .projects a:hover img,
 .projects a:focus img  {
-  border:2px solid #000;
+  border:2px solid #1A1A1A;
 }
 
 .projects-list {
@@ -455,7 +470,7 @@ a.social_icon:focus img {
 }
 
 .gallery_thumb a:hover img {
-  border:2px solid #000;
+  border:2px solid #1A1A1A;
 }
 
 /* Art and Unbuilt pages */
@@ -486,7 +501,7 @@ a.social_icon:focus img {
 
 .artgallery_thumb  a:hover img,
 .artgallery_thumb  a:focus img   {
-  border:2px solid #000;
+  border:2px solid #1A1A1A;
 }
 
 .row1 {
@@ -514,7 +529,7 @@ a.social_icon:focus img {
 }
 .video a:hover img,
 .video a:focus img {
-  border:2px solid #000;
+  border:2px solid #1A1A1A;
 }
 
 /* Awards amd Publications page */
