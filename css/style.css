@@ -15,7 +15,6 @@ a:hover {
 }
 
 img {
-  max-width: 400px;
   border:0;
 }
 
@@ -420,6 +419,11 @@ a.social_icon:focus img {
 
 .leftcolumn {
   margin-right: 5%;
+}
+
+.leftcolumn img,
+.rightcolumn img {
+  max-width: 400px;
 }
 
 .gallery {
