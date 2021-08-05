@@ -2,9 +2,90 @@
 title: nervegna reed
 body: class='splash'
 ---
-<div id="plus">
-  <a href="projects">
-    <img src="img/plus.gif" alt="enter" title="enter"><br><br>
-    <span class="enter">enter</span>
-  </a>
+
+<div id="homepage">
+<div id="nv_menu">
+  <ul>
+    <li><a href="/profile/">nr</a></li>
+    <li><a href="/projects/">projects</a></li>
+    <li><a href="/projects/exhibitions/">exhibitions / media</a></li>
+    <li><a href="/profile/">contact</a></li>
+  </ul>
 </div>
+
+
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <a href="/projects/whitehouse.html">
+      <img src="img/projects/slideshow/Whitehouse_slideshow.jpg" style="width:100%">
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="/projects/judo.html">
+      <img src="img/projects/slideshow/Judo_slideshow.jpg" style="width:100%">
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="/projects/whitehouse.html">
+      <img src="img/projects/slideshow/MG_slideshow.jpg" style="width:100%">
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="/projects/mqc.html">
+      <img src="img/projects/slideshow/Quakers_slideshow.jpg" style="width:100%">
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="/projects/wdh.html">
+      <img src="img/projects/slideshow/WDHOUSE_slideshow.jpg" style="width:100%">
+    </a>
+  </div>
+
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
