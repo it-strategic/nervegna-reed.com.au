@@ -241,7 +241,7 @@ a.social_icon {
   width: 30px;
   height: 30px;
   opacity: 0.7;
-  border:1px dashed #F00;
+  border:1px dashed black;
 }
 
 a.social_icon:hover img,
