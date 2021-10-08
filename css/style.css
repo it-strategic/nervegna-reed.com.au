@@ -735,8 +735,9 @@ a.social_icon:focus img {
   }
 
   #nv_menu ul li {
-    font-size:1em;
-    margin-left:-90px;
+    font-size:1.2em;
+    margin-left:-100px;
+    margin-bottom:2px;
   }
 }
 
