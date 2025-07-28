@@ -570,12 +570,32 @@ a.social_icon:focus img {
 
 /* Awards amd Publications page */
 
-.publications ul li {
+.ap_timeline ul li {
   padding-bottom: .5em;
+  display: flex;
+  padding: 0.5em 0;
 }
 
 .publications .rightcolumn {
   text-align: center;
+}
+
+.ap_timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ap_timeline .ap_year {
+  flex: 0 0 50px; /* fixed width */  
+}
+
+.ap_timeline .ap_description {
+  flex: 1; /* take up remaining space */
+}
+
+.ap_timeline .ap_description .ap_bold {
+  font-weight: bold;
 }
 
 /* Slideshow container */
