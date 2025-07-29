@@ -587,11 +587,11 @@ a.social_icon:focus img {
 }
 
 .ap_timeline .ap_year {
-  flex: 0 0 50px; /* fixed width */  
+  flex: 0 0 50px;   
 }
 
 .ap_timeline .ap_description {
-  flex: 1; /* take up remaining space */
+  flex: 1;
 }
 
 .ap_timeline .ap_description .ap_bold {
