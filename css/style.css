@@ -238,8 +238,8 @@ a.social_icon {
 }
 
 .social_icon img {
-  width: 30px;
   height: 30px;
+  width: auto;
   opacity: 0.7;
   border:1px dashed black;
 }
@@ -384,35 +384,23 @@ a.social_icon:focus img {
   cursor: default;
 }
 
+
 /* Profile page */
 .profileimg {
-  float:right;
-  margin:20px 0 0 16px;
-  border:0px solid #1A1A1A;
+  margin:16px 0px 16px 0;
+  border:none;
+  max-height: auto;
+  max-width: 600px;
 }
 
-#nrintro {
-  text-align:left;
-  width:100%;
-  line-height:1.4em;
-  font-size:1.1em;
-}
-
-#nrintro p {
-  margin-top:0;
-  margin-bottom:1em;
-}
-
-.profilecontact {
-  font-weight:bold;
-}
-
-.biohead {
-  font-size:1em;
+@media (max-width: 768px) {
+  #introtext { 
+    grid-template-columns: 1fr; 
+  }
 }
 
 .quals {
-  font-size:.85em;
+  font-size:.9em;
 }
 
 #toby,
@@ -421,10 +409,134 @@ a.social_icon:focus img {
   text-align:left;
 }
 
-#toby .social_icon,
-#anna .social_icon {
+#toby .social_icon:nth-of-type(2),
+#anna .social_icon:nth-of-type(2) {
   margin-left: 1em;
 }
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+#introtext {
+  line-height: 1.6;
+}
+
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profileimg {
+  max-width: 100%;
+}
+
+#nr-contact-block {
+  padding: 0 0 0 1rem;
+}
+
+.contact-block {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.profile-sidebar h3 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 992px) { 
+  .profile-grid {
+    grid-template-columns: 1fr; 
+  }
+  
+  .profile-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .profileimg {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+
+  .contact-block {
+    flex: 1 1 100%;
+    padding-left: 1rem;
+    border-bottom: 1px solid #ddd;
+    border-top:0px;
+  }
+
+  #nr-contact-block {
+    flex: 1 1 100%;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-sidebar {
+    flex-direction: column;
+  }
+
+   #nr-contact-block {
+    padding-left: 0;
+  }
+
+  .contact-block {
+    padding-left: 0;
+  }
+}
+
+/* Profile page, Selected works */
+.selected_works {
+  width: 100%;
+  margin-top: 4em;
+}
+
+.selected_works h1 {
+  line-height: normal;
+}
+
+.selected_works ul li {
+  padding-bottom: .5em;
+  display: flex;
+  padding: 0.5em 0;
+}
+
+.selected_works .sw_year {
+  text-align: right; 
+  width: 4em;
+  margin-right: 20px;  
+}
+
+.selected_works .sw_description {
+  flex: 1;
+}
+
+.selected_works .sw_description .ap_bold {
+  font-weight: bold;
+}
+
+.selected_works ul {
+  padding-inline-start: 0px;
+}
+
+@media (max-width: 768px) {
+  .selected_works {
+    margin-top: 2em;
+  }
+
+  .selected_works .sw_year {
+      text-align: left;
+      width: 3.8;  
+      margin-right: 0.5em;
+    }
+}
+
 
 /* Projects main page */
 .projects a img {
@@ -802,3 +914,4 @@ a.social_icon:focus img {
 
 
 * {box-sizing:border-box}
+
