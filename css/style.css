@@ -491,52 +491,6 @@ a.social_icon:focus img {
   }
 }
 
-/* Profile page, Selected works */
-.selected_works {
-  width: 100%;
-  margin-top: 4em;
-}
-
-.selected_works h1 {
-  line-height: normal;
-}
-
-.selected_works ul li {
-  padding-bottom: .5em;
-  display: flex;
-  padding: 0.5em 0;
-}
-
-.selected_works .sw_year {
-  text-align: right; 
-  width: 4em;
-  margin-right: 20px;  
-}
-
-.selected_works .sw_description {
-  flex: 1;
-}
-
-.selected_works .sw_description .ap_bold {
-  font-weight: bold;
-}
-
-.selected_works ul {
-  padding-inline-start: 0px;
-}
-
-@media (max-width: 768px) {
-  .selected_works {
-    margin-top: 2em;
-  }
-
-  .selected_works .sw_year {
-      text-align: left;
-      width: 3.8;  
-      margin-right: 0.5em;
-    }
-}
-
 
 /* Projects main page */
 .projects a img {
@@ -681,7 +635,6 @@ a.social_icon:focus img {
 }
 
 /* Awards amd Publications page */
-
 .ap_timeline ul li {
   padding-bottom: .5em;
   display: flex;
@@ -696,10 +649,13 @@ a.social_icon:focus img {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .ap_timeline .ap_year {
   flex: 0 0 50px;   
+  text-align: right;
+  margin-right: 1.4em;
 }
 
 .ap_timeline .ap_description {
@@ -709,6 +665,22 @@ a.social_icon:focus img {
 .ap_timeline .ap_description .ap_bold {
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .ap_timeline {
+    margin-top: 2em;
+  }
+
+  .ap_timeline ul {
+    padding-left: 0em;
+  }
+
+  .ap_timeline .ap_year {
+      width: 3.8;  
+      margin-right: 1em;
+    }
+}
+
 
 /* Slideshow container */
 .slideshow-container {
